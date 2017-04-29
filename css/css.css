@@ -50,10 +50,9 @@
 
   /*  FONTS */
 
-  h1, nav a, nav h3 {
+  h1, nav a, nav h3, p {
     font-family: 'Raleway', Arial, sans-serif;
     letter-spacing: 0.2em;
-    color: #ffffff;
   }
 
   nav a, nav h3 {
@@ -65,12 +64,14 @@
     text-transform: uppercase;
   }
 
-
 /* LAYOUT */
   body {
     position: relative;
   }
 
+  div {
+    position: relative;
+  }
   .no-scroll {
     overflow-y: hidden;
   }
@@ -90,7 +91,7 @@
   .flex { display: flex;}
   .center { justify-content: center;}
   .start { justify-content: flex-start;}
-
+  figure { margin: 15px!important; }
   .flexCenter { align-items: center; }
 
   /* NAVIGATION */
@@ -183,83 +184,30 @@
     border: 1px solid red;
     position: relative;
   }
-  #about, #gallery {
-    background-color: #fff;
-  }
-  #about #featherSVG {
-    z-index: 5;
-    position: relative;
-    top: 100px;
-    left: -100px;
 
-  }
-  #about .panel-group {
-    z-index: 10;
+  #featherSVG {
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+    width: 15rem;
+    height: 15rem;
   }
 
-  #about .profile-image {
-    margin-left: 12%;
+  svg {
+    stroke: rgba(3, 1, 19, 0.9);
+    fill: none;
+    stroke-width: 5;
   }
-  #about .profile-image img {
-    max-width: 350px;
-    width: 100%;
+
+/*  ABOUT */
+  .profile-image {
+    background-image: url("../images/miaAbout2.jpg");
+    height: 60vh;
+    max-width: calc(40rem + 20vw);
+    background-size: cover;
     border-radius: 1%;
     -webkit-border-radius: 1%;
     -moz-border-radius: 1%;
-  }
-  #about .about-info {
-    position: relative;
-  }
-  #about .about-info .feather {
-    position: absolute;
-    top: 230px;
-    left: 60%;
-    height: 375px;
-  }
-  #about .about-info .feather svg {
-    height: 100%;
-    max-width: 100%;
-  }
-  #about .about-info .panel-group {
-    position: relative;
-
-  }
-  #about .about-info .panel-group .panel {
-    background-color: transparent;
-    box-shadow: none;
-    margin-bottom: 20px;
-  }
-  #about .about-info .panel-group .panel .panel-heading {
-    padding: 20px 15px;
-  }
-  #about .about-info .panel-group .panel .panel-body {
-    border-top: 2px solid #722f37;
-  }
-  #about .about-info .panel-group .panel .panel-body p {
-    font-size: 1.1em;
-  }
-  #about .about-info .panel-group .panel .panel-body p a {
-    font-size: inherit;
-    color: #000;
-  }
-  #about .about-info .panel-group .panel .panel-body p a:hover {
-    color: #000;
-  }
-  #about .about-info .panel-group .panel .panel-title > a {
-    letter-spacing: 2px;
-    font-size: 1.5em;
-  }
-  #about .about-info .panel-group .panel .panel-title > a .fa {
-    position: relative;
-    float: right;
-    color: #722f37;
-  }
-  #about .about-info .panel-group .panel .panel-title > a:hover,
-  #about .about-info .panel-group .panel .panel-title > a:active {
-    color: #000;
-  }
-  #about .about-info .panel-group .panel .panel-body a {
-    font-size: inherit;
   }
 
   #spacer .featherSmall {
@@ -340,10 +288,6 @@
   footer a {
     padding: 0 2rem;
     font-size: 2rem;
-    color: #ffffff;
-  }
-  footer a:hover {
-    color: #722f37;
   }
 
   @media screen and (max-width: 480px) {
@@ -367,6 +311,10 @@
       background-color: #fff;
       color: #333;
     }
+    .dark-lg a { color: #fff;}
+    .dark-lg a:hover { color: #fff;}
+    .light-lg a { color: #333;}
+    .light-lg a:hover { color: #111;}
     #solo, #shoot { height: 40vh; }
     #outdoor, #double { height: 30vh; }
     #reel { height: 50vh; }
@@ -386,6 +334,10 @@
       background-color: #fff;
       color: #333;
     }
+    .dark-lg a { color: #fff;}
+    .dark-lg a:hover { color: #fff;}
+    .light-lg a { color: #333;}
+    .light-lg a:hover { color: #111;}
     .menu-open {
       height: 100vh;
       width: 100vw;
@@ -411,10 +363,6 @@
     }
 
     #solo, #shoot, #outdoor, #double, #reel { height: 30vh;}
-
-    #featherSVG {
-      display: none;
-    }
   }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {

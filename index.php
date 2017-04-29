@@ -113,12 +113,6 @@
 
 	    });
 
-	    //ABOUT COLLAPSE BUTTONS
-	    $('.panel-title a').click(function(){
-	    	$(this).find($(".fa")).toggleClass("fa-times fa-plus");
-	    	$(this).parent().parent().parent().siblings().find($(".fa")).removeClass("fa-times").addClass("fa-plus");
-	    });
-
 		//LIGHTBOX Magnific-Popup
 		$('.gallery-item').each(function() { // the containers for all your galleries
 			$(this).magnificPopup({
@@ -133,18 +127,14 @@
 			});
 		});
 
-
 		//Video light box
 		$('#reel').magnificPopup({
 			delegate: 'a',
 			type: 'iframe',
-
 			mainClass: 'mfp-fade',
 			removalDelay: 160,
 			preloader: false,
-
 			fixedContentPos: false
-
 		});
 
 
