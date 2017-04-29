@@ -3,9 +3,9 @@
 <head>
 
 	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<meta name="description" content="Mia Mollie: Aerial Hoop Performer and Teacher">
+	<meta name="description" content="Mia Mollie: Aerial Hoop Lyra Performer and Teacher">
 	<meta name="keywords" content="aerial hoop ring lyra performance circus workshops teaching mia mollie de burca">
 	<meta name="author" content="Mia de Búrca">
 
@@ -19,7 +19,6 @@
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-
 	<!-- GOOGLE FONT -->
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
 
@@ -29,14 +28,10 @@
 	<!-- LIGHTBOX -->
 	<link rel="stylesheet" href="css/magnificpopup.css" type="text/css"/>
 
-
 	<title>Mia Mollie Aerial</title>
-
-
 </head>
 
 <body data-spy="scroll" data-target=".navigation">
-
 
 	<?php include 'includes/nav.php' ?>
 
@@ -78,7 +73,6 @@
 		var window_height = $(window).innerHeight() + 50;
 		var window_width = $(window).innerWidth();
 
-
 		$(".container-fullscreen").css("min-height", window_height);
 
 	});
@@ -87,10 +81,26 @@
 
 	$(document).ready(function(){
 
+    //Menu toggle
+    $('nav button').click(function(){
+      $('body').toggleClass("no-scroll");
+      $('nav').toggleClass("menu-open");
+      $('nav ul').toggleClass("hide-sm");
+      if ( $('nav h3').text() == 'menu') {
+        $('nav h3').text('close');
+      } else {
+        $('nav h3').text('menu');
+      }
+    });
+
 		//MENU SELECTED
-		$('.navigation li').click(function() {
+		$('nav li').click(function() {
+      $('body').removeClass('no-scroll');
+      $('nav').removeClass("menu-open");
+      $('nav ul').addClass("hide-sm");
+      $('nav h3').text('menu');
 			$(this).addClass('selected').siblings().removeClass('selected');
-    	});
+    });
 
 		// SMOOTH SCROLLING -  Shane's code!
 		$('a.scroll').click(function( event ){
@@ -99,19 +109,15 @@
 			if( $(this.hash).length == 0 )
 				return true;
 	        event.preventDefault();// stop the link from being followed
-
 	        $('html, body').animate({scrollTop: $(this.hash).offset().top }, 1000);
 
 	    });
-
 
 	    //ABOUT COLLAPSE BUTTONS
 	    $('.panel-title a').click(function(){
 	    	$(this).find($(".fa")).toggleClass("fa-times fa-plus");
 	    	$(this).parent().parent().parent().siblings().find($(".fa")).removeClass("fa-times").addClass("fa-plus");
 	    });
-
-
 
 		//LIGHTBOX Magnific-Popup
 		$('.gallery-item').each(function() { // the containers for all your galleries
