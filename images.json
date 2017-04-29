@@ -41,7 +41,7 @@
 
 	"double":[
 		{
-			"title": "\"Beat to Beat Aerial Performance at Celestial Bodies\"",
+			"title": "\"Beat to Beat Aerial at Celestial Bodies\"",
 			"img": "\"../images/doubles/double1.jpg\""
 		},
 		{
@@ -49,52 +49,20 @@
 			"img": "\"../images/doubles/double2.jpg\""
 		},
 		{
-			"title": "\"Performance as part of due Bees and Honey\"",
+			"title": "\"Bees and Honey Duo at Edinburgh Cabaret\"",
 			"img": "\"../images/doubles/double3.jpg\""
 		},
 		{
-			"title": "\"Partner: Dmitri Shamanaev\"",
+			"title": "\"Toulouse en Piste with Dmitri Shamanaev\"",
 			"img": "\"../images/doubles/double4.jpg\""
 		},
 		{
-			"title": "\"Beat to Beat Aerial Performance at Irish Aerial Dance Festival\"",
-			"img": "\"../images/doubles/double5.jpg\""
-		},
-		{
-			"title": "\"Partner: Niamh Creely of www.ether.ie\"",
-			"img": "\"../images/doubles/double6.jpg\""
+			"title": "\"Beat to Beat Aerial at Irish Aerial Dance Festival\"",
+			"img": "\"../images/doubles/double5.png\""
 		},
 		{
 			"title": "\"Partner: Cécile Biensans\"",
 			"img": "\"../images/doubles/double7.jpg\""
-		}
-	],
-
-
-	"out":[
-		{
-		"title": "\"Copyright: Cleona McCann\"",
-		"img": "\"../images/outdoor/out1.jpg\""
-		},
-		{
-		"title": "\"Copyright: Roger Kenny\"",
-		"img": "\"../images/outdoor/out2.jpg\""
-		},
-		{
-		"title": "\"Copyright: Cleona McCann\"",
-		"img": "\"../images/outdoor/out3.jpg\""
-		},
-		{
-		"title": "\"Copyright: Roger Kenny\"",
-		"img": "\"../images/outdoor/out4.jpg\""
-		},
-		{
-		"title": "\"Copyright: Cleona McCann\"",
-		"img": "\"../images/outdoor/out5.jpg\""
-		},
-		{
-		"title": "\"Copyright: Roger Kenny\"",
-		"img": "\"../images/outdoor/out6.jpg\""
 		}
 	],
 
@@ -112,24 +80,28 @@
 			"img": "\"../images/photoshoot/shoot3.jpg\""
 		},
 		{
-			"title": "\"Copyright: Roger Kenny\"",
+			"title": "\"Copyright: Marie Watt\"",
 			"img": "\"../images/photoshoot/shoot4.jpg\""
-		},
-		{
-			"title": "\"Copyright: Ken Dobson\"",
-			"img": "\"../images/photoshoot/shoot5.jpg\""
 		},
 		{
 			"title": "\"Copyright: Monika Halinowska\"",
 			"img": "\"../images/photoshoot/shoot6.jpg\""
 		},
 		{
-		"title": "\"Copyright: Monika Halinowska\"",
-		"img": "\"../images/photoshoot/shoot8.jpg\""
+		"title": "\"Copyright: Wendy Hannan\"",
+		"img": "\"../images/photoshoot/shoot7.jpg\""
 		},
 		{
-		"title": "\"Copyright: Wendy Hannan\"",
-		"img": "\"../images/photoshoot/shoot9.jpg\""
+		"title": "\"Copyright: Josie Hayden\"",
+		"img": "\"../images/photoshoot/shoot8.jpeg\""
+		},
+		{
+			"title": "\"Copyright: Roger Kenny\"",
+			"img": "\"../images/photoshoot/shoot9.jpg\""
+		},
+		{
+			"title": "\"Copyright: Cleona McCann\"",
+			"img": "\"../images/photoshoot/shoot10.jpg\""
 		}
 	]
 }

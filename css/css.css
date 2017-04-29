@@ -58,6 +58,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
+    padding: 10vw;
   }
   .navigation {
     border: 1px solid transparent;
@@ -104,11 +105,11 @@
   .navigation ul.navbar-nav li a:focus,
   .navigation ul.navbar-nav li a.active,
   .navigation ul.navbar-nav li a.selected {
-    background-color: #2c3437;
+    background-color: #061e27;
     color: #fff;
   }
   #home {
-    background-image: url("../images/home1.jpg");
+    background-image: url("../images/mia.jpg");
   }
   #home .main-title {
     position: absolute;
@@ -145,7 +146,7 @@
     position: relative;
   }
   #about, #gallery {
-    background-color: #EAEBEA;
+    background-color: #fff;
   }
   #about #featherSVG {
     z-index: 5;
@@ -205,11 +206,9 @@
   }
   #about .about-info .panel-group .panel .panel-body p a:hover {
     color: #000;
-    text-decoration: none;
   }
   #about .about-info .panel-group .panel .panel-title > a {
     letter-spacing: 2px;
-    text-decoration: none;
     font-size: 1.5em;
   }
   #about .about-info .panel-group .panel .panel-title > a .fa {
@@ -220,14 +219,11 @@
   #about .about-info .panel-group .panel .panel-title > a:hover,
   #about .about-info .panel-group .panel .panel-title > a:active {
     color: #000;
-    text-decoration: none;
   }
   #about .about-info .panel-group .panel .panel-body a {
     font-size: inherit;
   }
-  #about .about-info .panel-group .panel .panel-body a:hover {
-    text-decoration: none;
-  }
+
   #spacer .featherSmall {
     position: absolute;
     height: 50px;
@@ -235,130 +231,92 @@
   #spacer .featherSmall img {
     height: 100%;
   }
-/*  div {
-    transition: 3s ease-in-out;
-    }*/
-    #gallery h2, #about h2 {
-      padding: 30px;
-      margin: 0;
-    }
-    #gallery .col-sm-6 {
-      padding: 0;
-    }
-    #gallery .gallery-item {
-      background-size: 110%;
-      background-repeat: no-repeat;
-      cursor: pointer;
-      position: relative;
-      transition: all 0.5s ease-in-out;
-    }
-    #gallery .gallery-item h3 {
-      position: absolute;
-      color: #fff;
-      font-size: 1.2em;
-      margin-top: 10%;
-      margin-left: 5%;
-      line-height: 1px;
-      letter-spacing: 0.3em;
-      transition: all 0.5s ease-in-out;
-    }
-    #gallery .gallery-item ul {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    #gallery .gallery-item ul li:first-of-type {
-      display: block;
-      height: 100%;
-    }
-    #gallery .gallery-item ul li:first-of-type a {
-      background: rgba(114, 47, 55, 0.5);
-      display: block;
-      height: 100%;
-    }
-    #gallery .gallery-item ul li {
-      display: none;
-    }
-    #gallery .gallery-item:hover {
-      background-size: 100%;
-    }
-    #gallery .gallery-item:hover h3 {
-      letter-spacing: 0.45em;
-    }
-    #gallery #solo {
-      background-image: url("../images/solo_work/solo1.jpg");
-    }
-    #gallery #shoot {
-      background-image: url("../images/photoshoot/shoot1.jpg");
-    }
-    #gallery #solo,
-    #gallery #shoot {
-      height: 215px;
-    }
-    #gallery #reel {
-      height: 300px;
-    }
-    #gallery #reel li a i {
-      color: #ffffff;
-      font-size: 4.5em;
-      position: relative;
-      top: 40%;
-      left: 40%;
-    }
-    #gallery #outdoor {
-      background-image: url("../images/outdoor/out1.jpg");
-    }
-    #gallery #double {
-      background-image: url("../images/doubles/double1.jpg");
-    }
-    #gallery #outdoor,
-    #gallery #double {
-      height: 130px;
-    }
-    #contact {
 
-      background-color: #2c3437;
-      color: #ffffff;
-    }
+  /*GALLERY*/
+  .gallery-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
 
-    #contact h3{
-      padding: 40px 0 0 20px;
-      margin: 0;
+  .gallery-item h3 {
+    position: absolute;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 25px 15px;
+    line-height: 1px;
+    letter-spacing: 0.25em;
+    transition: all 0.5s ease;
+  }
+
+  .gallery-item:hover h3 {
+    font-size: 1.6rem;
+  }
+
+  .gallery-item ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery-item ul li:first-of-type {
+    display: block;
+    height: 100%;
+  }
+
+  .gallery-item ul li {
+    display: none;
+  }
+
+  .gallery-item ul li:first-of-type a {
+    background: rgba(51, 51, 51, 0.5);
+    display: block;
+    height: 100%;
+    transition: background 0.5s ease;
+  }
+
+  .gallery-item:hover ul li:first-of-type a {
+    background: rgba(51, 51, 51, 0.3);
+  }
+
+  #solo { background-image: url("../images/photoshoot/shoot3.jpg");}
+  #reel { background-image: url("../images/solo/solo1.jpg");}
+  #shoot { background-image: url("../images/photoshoot/shoot1.jpg");}
+  #outdoor { background-image: url("../images/outdoor/out1.jpg");}
+  #double { background-image: url("../images/doubles/double1.jpg");}
+
+  #reel li a i {
+    color: #ffffff;
+    font-size: 4.5em;
+    position: relative;
+    top: 40%;
+    left: 40%;
+  }
+
+    /* FOOTER */
+    footer {
+      background-color: #061e27;
+      color: #ffffff;
+      padding: 4rem;
+      margin-top: -2rem;
     }
-    #contact a {
-      display: block;
-      position: relative;
-      margin-left: 50%;
-      padding-top: 10px;
-      font-size: 2em;
+    footer a {
+      padding: 0 2rem;
+      font-size: 2rem;
       color: #ffffff;
     }
-    #contact a i {
-      padding: 15px 0;
-    }
-    #contact a:hover {
+    footer a:hover {
       color: #722f37;
-      text-decoration: none;
     }
+
     @media screen and (max-width: 480px) {
       #spacer,
       .featherSmall {
         display: none;
       }
     }
-    @media screen and (max-width: 1090px) {
-      #gallery #solo,
-      #gallery #shoot {
-        height: 200px;
-      }
-      #gallery #reel {
-        height: 280px;
-      }
-      #gallery #outdoor,
-      #gallery #double {
-        height: 120px ;
-      }
-    }
+
     @media screen and (min-width: 768px) {
       .navigation.navbar-default {
         padding: 5px 5px;
@@ -367,29 +325,65 @@
         left: 91%;
       }
 
+      .fRow-lg { flex-direction: row;}
+      .fColumn-lg { flex-direction: column;}
+
+      .half-lg { width: 50vw; }
+      .full-lg { width: 80vw; max-width: 960px }
+      #solo, #shoot { height: 40vh; }
+      #outdoor, #double { height: 30vh; }
+      #reel { height: 50vh; }
+
       .navigation ul.navbar-nav {
-        background-color: #2c3437;
-      }
-      #contact {
-        height: 200px;
+        background-color: #061e27;
       }
     }
-    @media screen and (max-width: 767px) {
-     .navigation.navbar {
-      background-color: #2c3437;
-    }
-    .navigation ul.navbar-nav {
-      float: left;
-    }
-    .gallery-item {
-      margin-bottom: 5px;
-    }
-    #featherSVG {
-      display: none;
-    }
+    @media screen and (max-width: 768px) {
+      .navigation.navbar {
+        background-color: #061e27;
+      }
+      .navigation ul.navbar-nav {
+        float: left;
+      }
+      #featherSVG {
+        display: none;
+      }
+      .fColumn-sm {
+        flex-direction: column;
+      }
+      .fRow-sm {
+        flex-direction: row;
+      }
+      .half-sm { width: 50vw; }
+      .full-sm { width: 80vw; max-width: 960px }
+      #solo, #shoot, #outdoor, #double, #reel { height: 30vh; }
   }
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .container-fullscreen{
       background-attachment: scroll;
     }
   }
+
+
+/*   NEW STUFF */
+
+.flex {
+  display: flex;
+  justify-content: center;
+
+}
+
+.flexCenter {
+  align-items: center;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Bootstrap override*/
+
+a:focus {
+  outline: thin dotted!important;
+  text-decoration: none!important;
+}
