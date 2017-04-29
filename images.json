@@ -1,0 +1,135 @@
+{
+	"solo":[
+		{
+		"title": "\"Coin Opperated Doll\"",
+		"img": "\"../images/solo/solo1.jpg\""
+		},
+		{
+		"title": "\"BreezeBlocks\"",
+		"img": "\"../images/solo/solo2.jpg\""
+		},
+		{
+		"title": "\"Every Other\"",
+		"img": "\"../images/solo/solo3.png\""
+		},
+		{
+		"title": "\"Take me to Church\"",
+		"img": "\"../images/solo/solo4.jpg\""
+		},
+		{
+		"title": "\"BreezeBlocks\"",
+		"img": "\"../images/solo/solo5.jpg\""
+		},
+		{
+		"title": "\"Take me to Church\"",
+		"img": "\"../images/solo/solo7.jpg\""
+		},
+		{
+		"title": "\"Coin Opperated Doll\"",
+		"img": "\"../images/solo/solo8.jpg\""
+		},
+		{
+		"title": "\"Take me to Church\"",
+		"img": "\"../images/solo/solo9.jpg\""
+		},
+		{
+		"title": "\"Coin Opperated Doll\"",
+		"img": "\"../images/solo/solo12.jpg\""
+		}
+	],
+
+
+	"double":[
+		{
+			"title": "\"Beat to Beat Aerial Performance at Celestial Bodies\"",
+			"img": "\"../images/doubles/double1.jpg\""
+		},
+		{
+			"title": "\"Partner: Jayne Lynna at www.jaynelynna.com\"",
+			"img": "\"../images/doubles/double2.jpg\""
+		},
+		{
+			"title": "\"Performance as part of due Bees and Honey\"",
+			"img": "\"../images/doubles/double3.jpg\""
+		},
+		{
+			"title": "\"Partner: Dmitri Shamanaev\"",
+			"img": "\"../images/doubles/double4.jpg\""
+		},
+		{
+			"title": "\"Beat to Beat Aerial Performance at Irish Aerial Dance Festival\"",
+			"img": "\"../images/doubles/double5.jpg\""
+		},
+		{
+			"title": "\"Partner: Niamh Creely of www.ether.ie\"",
+			"img": "\"../images/doubles/double6.jpg\""
+		},
+		{
+			"title": "\"Partner: Cécile Biensans\"",
+			"img": "\"../images/doubles/double7.jpg\""
+		}
+	],
+
+
+	"out":[
+		{
+		"title": "\"Copyright: Cleona McCann\"",
+		"img": "\"../images/outdoor/out1.jpg\""
+		},
+		{
+		"title": "\"Copyright: Roger Kenny\"",
+		"img": "\"../images/outdoor/out2.jpg\""
+		},
+		{
+		"title": "\"Copyright: Cleona McCann\"",
+		"img": "\"../images/outdoor/out3.jpg\""
+		},
+		{
+		"title": "\"Copyright: Roger Kenny\"",
+		"img": "\"../images/outdoor/out4.jpg\""
+		},
+		{
+		"title": "\"Copyright: Cleona McCann\"",
+		"img": "\"../images/outdoor/out5.jpg\""
+		},
+		{
+		"title": "\"Copyright: Roger Kenny\"",
+		"img": "\"../images/outdoor/out6.jpg\""
+		}
+	],
+
+	"shoot":[
+		{
+			"title": "\"Copyright: Barry Dillon\"",
+			"img": "\"../images/photoshoot/shoot1.jpg\""
+		},
+		{
+			"title": "\"Copyright: Roger Kenny\"",
+			"img": "\"../images/photoshoot/shoot2.jpg\""
+		},
+		{
+			"title": "\"Copyright: Cleona McCann\"",
+			"img": "\"../images/photoshoot/shoot3.jpg\""
+		},
+		{
+			"title": "\"Copyright: Roger Kenny\"",
+			"img": "\"../images/photoshoot/shoot4.jpg\""
+		},
+		{
+			"title": "\"Copyright: Ken Dobson\"",
+			"img": "\"../images/photoshoot/shoot5.jpg\""
+		},
+		{
+			"title": "\"Copyright: Monika Halinowska\"",
+			"img": "\"../images/photoshoot/shoot6.jpg\""
+		},
+		{
+		"title": "\"Copyright: Monika Halinowska\"",
+		"img": "\"../images/photoshoot/shoot8.jpg\""
+		},
+		{
+		"title": "\"Copyright: Wendy Hannan\"",
+		"img": "\"../images/photoshoot/shoot9.jpg\""
+		}
+	]
+}

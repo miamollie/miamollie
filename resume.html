@@ -1,0 +1,367 @@
+<html>
+<head>
+	<title>Mia de Burca -  Resume</title>
+	<!-- the important stuff -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description" content="Mia Mollie de Burca, does them websites ya know">
+	<meta name="keywords" content="dev developer front end website ">
+	<meta name="author" content="Mia de Búrca">
+
+	<!-- Favicon -->
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/imagesfavicon.ico" type="image/x-icon">
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<!-- Google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>	<style>
+
+	/*RESET*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed,
+   figure, figcaption, footer, header, hgroup,
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+   	margin: 0;
+   	padding: 0;
+   	border: 0;
+   	font-size: 100%;
+   	font: inherit;
+   	vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure,
+   footer, header, hgroup, menu, nav, section {
+   	display: block;
+   }
+   body {
+   	line-height: 1;
+   }
+   ol, ul {
+   	list-style: none;
+   }
+   blockquote, q {
+   	quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+   	content: '';
+   	content: none;
+   }
+   table {
+   	border-collapse: collapse;
+   	border-spacing: 0;
+   }
+
+
+   html {
+   	box-sizing: border-box;
+   }
+   *, *:before, *:after {
+   	box-sizing: inherit;
+   }
+
+   /*LAYOUT*/
+   body{
+   	left: 0;
+   	margin: 0;
+   	overflow: hidden;
+   	position: relative;
+   	transition: background-color 1s ease;
+   	-moz-transition: background-color 1s ease;
+   	-webkit-transition: background-color 1s ease;
+   }
+
+   .content{
+   	position: absolute;
+   	width: 40%;
+   	height: 90%;
+   }
+
+   #work{right: 10%; top:0%; transition: top 2s ease;}
+   #life{left: 10%; bottom: 0%; transition: bottom 2s ease;}
+
+   #work.content.out{top: -80%;}
+   #life.content.out{bottom: -80%;}
+
+
+   .content > div{
+    padding: 10px;
+    overflow-y: auto;
+    height: 90%;
+  }
+
+
+  h3{
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #work h3{bottom: 15px;}
+  #colourCircle{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    bottom: .2rem;
+    right: .2rem;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+
+
+  /*TYPOGRAPHY*/
+
+  body{font-family: "Lato"; letter-spacing: 0.1rem;}
+
+  h1, h2, h3,h4{font-family: "Merriweather";}
+
+  h3{
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+
+
+  /*Line Detail*/
+  h3:before, h3:after{
+    position: absolute;
+    width: 30%;
+    top: 51%;
+    overflow: hidden;
+    height: 1px;
+    content: '\a0';
+  }
+
+  h3:before{
+    margin-left: -30%;
+    text-align: right;
+  }
+
+
+
+  .content p, .content li{
+    transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -webkit-transition:opacity 2s;
+  }
+  .content.out p, .content.out li{opacity: 0;}
+  .content.in p, .content.in li{opacity: 1;}
+
+  a{text-decoration:none;}
+
+  li{line-height: 1.15rem;}
+
+
+  /*SVG CIRCLES*/
+  .vennCircles{position: absolute; }
+
+  .svgCircle{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    stroke-width: 1px;
+    fill: none;
+  }
+
+  @keyframes moveRight{
+   0% { left: 0px; top: 0px }
+   25% { left: 20px; top: -5px }
+   50% { left: 0px; top: 0px}
+   75% { left: 0px; top: -15px }
+   100% { left: 0px; top: 0px}
+ }
+ @keyframes moveLeft{
+   0% { left: 0px; top: 0px }
+   25% { left: -20px; top: -5px }
+   50% { left: 0px; top: 0px}
+   75% { left: 0px; top: 15px }
+   100% { left: 0px; top: 0px}
+ }
+
+ @keyframes moveDown{
+   0% { left: 0px; top: 0px }
+   25% { left: 0px; top: 20px }
+   50% { left: 0px; top: 0px}
+   75% { left: 0px; top: 0px }
+   100% { left: 0px; top: 0px}
+ }
+
+ .vennCircles:hover .svgCircle:first-child{animation: moveRight 5s ease infinite;}
+ .vennCircles:hover .svgCircle:nth-child(2){animation: moveDown 5s ease infinite;}
+ .vennCircles:hover .svgCircle:last-child{animation: moveLeft 5s ease infinite;}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255,0,0,0.4);
+}
+
+ /*COLOURS*/
+ /*light*/
+ body.light{background-color: #fff; color: #000;}
+.light #colourCircle:hover, .light h3:before, .light h3:after{background-color: #000;}
+.light #colourCircle{background-color:#222;}
+.light a{color: #222;}
+.light a:hover{color: #000; border-bottom: 1px dashed #000;}
+.light .content{border: 1px solid #000;}
+.light .svgCircle{stroke: #000;}
+.light ::-webkit-scrollbar-thumb{background: rgba(0,0,0,0.8);}
+
+/*dark*/
+body.dark{background-color: #222; color: #fff}
+.dark #colourCircle:hover, .dark h3:before, .dark h3:after{background-color: #fff;}
+.dark #colourCircle{background-color:#eee;}
+.dark a{color: #fff;}
+.dark a:hover{color: #eee; border-bottom: 1px dashed #eee;}
+.dark .content{border: 1px solid #fff;}
+.dark .svgCircle{stroke: #fff;}
+.dark ::-webkit-scrollbar-thumb{background: rgba(255,255,255,0.8);}
+
+/*QUERIES*/
+@media only screen and (max-width: 890px){
+  .content{width:90%;}
+  #work, #life{left: 5%;}
+}
+
+</style>
+
+
+</head>
+<body class="light">
+	<div class="wrap">
+		<div class="out content" id="work">
+			<div>
+				<h4>Experience</h4>
+				<p><em>Hover job titles for more info</em></p>
+				<ul>
+					<li><a target="_black" href="http://www.milandirect.com.au" title="At Milan Direct Mia works as a member of the content management team. Duties include copy writing, etc etc. See examples of Mia's programming work for MD in the Profects session">Content Management @ Milan Direct</a></li>
+					<li><a target="_black" href="http://www.moonraking.com" title="Developing in HTML, CSS, JavaScript (and jQuery) and some PHP ">Freelance Junior Dev @ Moonraking</a></li>
+					<li><a target="_black" href="http://www.theluckylot.net/" title="Client relations, researching design trends and SEO solutions, updating and extending sites">Intern @ The Lucky Lot</a></li>
+				</ul>
+				<h4>Projects</h4>
+				<ul>
+					<li>For <em><a target="_black" href="http://www.milandirect.com.au">Milan Direct</a></em>  - eBay <a target="_black" href="http://www.ebay.com.au/itm/NEW-MILAN-DIRECT-Torsby-Side-Table-Charcoal-Oak-Legs-/361313216732">template</a> and sale <a target="_black" href="http://www.milandirect.com.au/extra-10/">pages</a></li>
+					<li>For <em>The IJSEES Journal</em>  - Squarespace <a target="_black" href="http://www.ijsees.com">Site</a></li>
+         <li>For <em>Myself</em> - Design and development of an artist's <a target="_black" href="http://www.miamollie.me">page</a></li>
+         <li>For <em><a target="_black" href="http://www.theluckylot.net">The Lucky Lot</a></em>  - <a target="_black" href="http://www.ilariacoaching.ie/retreats">Extension to Ilaria Coaching</a></li>
+         <li>For <em><a target="_black" href="http://www.moonraking.com">Moonraking</a></em>  - javascript <a target="_black" href="https://github.com/miamollie/space-invaders.git">Space Invaders</a></li>
+         <!-- <li>For <em><a target="_black" href="www.theluckylot.net">The Lucky Lot</a></em>  - Stary Sky</li> -->
+       </ul>
+       <h4 title="*bill paying not guaranteed">Skills</h4>
+       <ul>
+        <li>css, html and <span title="bootstrap, lessCSS, css3, html5">friends</span></li>
+        <li>javascript</li>
+        <li>php</li>
+        <li>insatiable curiosity</li>
+      </ul>
+    </div>
+    <h3 class="contentTrigger"><a>Work</a></h3>
+  </div>
+
+  <div class="vennCircles">
+    <svg class="svgCircle"><circle cx="50" cy="50" r="40"  /></svg>
+    <svg class="svgCircle"><circle cx="50" cy="50" r="40"  /></svg>
+    <svg class="svgCircle"><circle cx="50" cy="50" r="40"  /></svg>
+  </div>
+
+  <div class="out content" id="life">
+    <h3 class="contentTrigger"><a>Life</a></h3>
+    <div>
+      <div>
+       <h4>Bio</h4>
+       <p>Fortunate to have found the fun and fullfilment of the front end. Flair for figuring out foolproof fixes. Fascinated by fiddling with full stack. Frequently freelance. </p>
+     </div>
+     <div>
+       <h4>Education</h4>
+       <ul>
+        <li>University of Edinburgh <br>   -> MSc Translation Studies </li>
+        <li>University of Dublin, Trinity College <br>   -> BA Computer Science, Linguistics and French </li>
+      </ul>
+    </div>
+    <div>
+      <h4>Stuff</h4>
+      <p>Mia is also</p>
+      <ul>
+       <li>A circus performer</li>
+       <li>An avid baker</li>
+       <li>Very poor at giving car directions</li>
+     </ul>
+   </div>
+ </div>
+</div>
+<div id="colourCircle"></div>
+</div>
+
+
+<script>
+
+$(document).ready(function(){
+	// Toggle Content Boxes
+	$(".contentTrigger").click(function(){
+		$(this).parent().siblings().removeClass("in");
+		$(this).parent().siblings().addClass("out");
+		$(this).parent().toggleClass("in out");
+
+      //update circle position based on open section - #toDo
+    });
+
+		// Toggle Site Colour
+    $("#colourCircle").click(function(){
+     $("body").toggleClass("dark light");
+   });
+  });
+
+$(window).resize(function(){
+  var windowHeight = $(window).height();
+  var windowWidth = $(window).width();
+//Content box size
+
+
+//svgCircle placement
+var newXCoord = windowHeight/2 - 50;
+var newYCoord = windowWidth/2 - 50;
+$(".vennCircles").css("top", newXCoord);
+$(".vennCircles").css("left", newYCoord);
+
+});
+// Trigger Resize event
+$(window).trigger("resize");
+
+</script>
+</body>
+
+</html>
