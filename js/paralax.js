@@ -13,8 +13,6 @@ $(window).resize(function(){
 			height: $("#spacer").height()
 		};
 
-
-
 		origin = {
 			x: Math.round( field.width/2 ),
 			y: Math.round( field.height/2 ),
@@ -34,25 +32,20 @@ $(window).resize(function(){
 			x = Math.floor( Math.random() * (parseInt(field.width ) - 50));
 			y = Math.floor( Math.random() * (parseInt(field.height ) - 50));
 
-
-
 			$(this).css({ left: x +"px", top: y + "px" });
 			$(this).data("z", z);
 			$(this).data("x", x);
 			$(this).data("y", y);
 
-
 		});
-
 	});
 
 $(window).trigger("resize");
 
 $(document).ready(function(){
 
-
 	// Create feathers and append to the screen randomly
-	for( i=0; i < 10; i++ ){
+	for( i=0; i < 15; i++ ){
 
 		z = Math.floor( Math.random() *  20);
 		x = Math.floor( Math.random() * parseInt(field.width - 50) );
@@ -65,7 +58,6 @@ $(document).ready(function(){
 		feather.data("y", y);
 
 		$('#spacer').append(feather);
-
 	}
 
 	function updateField(){
@@ -86,32 +78,24 @@ $(document).ready(function(){
 			newX = ( angleX * $(this).data('z') ) + origin.x - (origin.x - $(this).data('x'));
 			newY = ( angleY * $(this).data('z') ) + origin.y - (origin.y - $(this).data('y'));
 
-			if( newX < field.width - 50 ){
+			if( newX < field.width - 20 ){
 				$(this).css({ left: newX + "px"});
 			}
 
-			if( newY < field.height - 50 ){
+			if( newY < field.height - 20 ){
 				$(this).css({ top: newY + "px" });
 			}
-
-
 		});
-
 	}
 
 	updateField();
-
 
 	//Scrolly Paralax
 	$(window).scroll(function() {
 
 		var scroll = $(window).scrollTop();
-
 		eye.y = scroll;
-
 		updateField();
-
-
 	});
 
 
@@ -126,10 +110,3 @@ $(document).ready(function(){
 	});
 
 });
-
-
-
-
-
-
-

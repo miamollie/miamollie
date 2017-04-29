@@ -1,6 +1,6 @@
 
 <!-- About -->
-<div id="about" class="container-fullscreen light-lg light-sm flex fRow-lg fColumn-sm flexCenter">
+<div id="about" class="container-fullscreen content light-lg light-sm flex fRow-lg fColumn-sm flexCenter">
 	<div class="half-lg full-sm">
 		<figure class="profile-image"></figure>
 	</div>

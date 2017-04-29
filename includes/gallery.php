@@ -15,9 +15,9 @@
 				}
 		}
 	?>
-	<div id="gallery" class="container-fullscreen flex fRow-lg fColumn-sm center">
-		<div class="full-lg full-sm flex fRow-lg fColumn-sm">
-			<div class="half-lg full-sm flex fColumn-lg fColumn-sm ">
+	<div id="gallery" class="container-fullscreen content flexCenter flex fRow-lg fColumn-sm center">
+		<div class="full-lg full-sm flex fRow-lg fColumn-sm dark-lg dark-sm">
+			<div class="half-lg full-sm flex fColumn-lg fColumn-sm">
 				<div class="gallery-item" id="solo">
 					<h3>Solo Work</h3>
 					<ul>

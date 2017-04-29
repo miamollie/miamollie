@@ -9,13 +9,14 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    text-decoration: none;
   }
   /* HTML5 display-role reset for older browsers */article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,
   section {
     display: block;
   }
   body {
-    line-height: 1;
+    line-height: normal;
   }
   ol,ul {
     list-style: none;
@@ -37,31 +38,25 @@
 
   a:hover { text-decoration: none;}
 
-
-/*bootstrap bummers*/
-  a:focus {
-    outline: none!important;
-    text-decoration: none!important;
-  }
-
-  h3 {
-    margin: none;
-  }
-
   /*  FONTS */
 
-  h1, nav a, nav h3, p {
+  h1, a, h3, p {
     font-family: 'Raleway', Arial, sans-serif;
     letter-spacing: 0.2em;
   }
 
   nav a, nav h3 {
     text-transform: lowercase;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 
   h1 {
     text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  p {
+    margin: 15px;
   }
 
 /* LAYOUT */
@@ -72,6 +67,11 @@
   div {
     position: relative;
   }
+
+  .content {
+    padding: 30px;
+  }
+
   .no-scroll {
     overflow-y: hidden;
   }
@@ -83,8 +83,6 @@
     -webkit-background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    position: relative;
-    padding: 10vw;
     background-position: 40%;
   }
 
@@ -99,7 +97,6 @@
   nav {
     position: fixed;
     z-index: 1000;
-    padding: 15px 30px;
     width: 100vw;
   }
 
@@ -152,37 +149,26 @@
   }
   #home .main-title {
     position: absolute;
-    bottom: 28%;
+    bottom: 50px;
     right: 8%;
-  }
-  #home h1 {
-    color: #ffffff;
-    position: absolute;
-    right: 50px;
-    font-size: 32px;
-    letter-spacing: 3px;
   }
   #home h1 span {
     font-weight: bold;
     font-size: 1.4em;
     letter-spacing: 0.27em;
   }
+
   #spacer {
     background-image: url("../images/bigimage1.jpg");
   }
+
   #spacer .feather {
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     background-image: url('../images/whiteFeather.png');
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-  }
-  #spacer #feathers {
-    height: 350px;
-    width: 800px;
-    border: 1px solid red;
-    position: relative;
   }
 
   #featherSVG {
@@ -228,7 +214,6 @@
 
   .gallery-item h3 {
     position: absolute;
-    color: #fff;
     font-size: 1.8rem;
     padding: 25px 15px;
     line-height: 1px;
@@ -282,17 +267,15 @@
 
   /* FOOTER */
   footer {
-    padding: 4rem;
-    margin-top: -2rem;
+    padding: 2rem;
   }
   footer a {
-    padding: 0 2rem;
-    font-size: 2rem;
+    padding: 0 1.5rem;
+    font-size: 1.5rem;
   }
 
   @media screen and (max-width: 480px) {
-    #spacer,
-    .featherSmall {
+    .hide-tiny {
       display: none;
     }
   }
@@ -318,6 +301,10 @@
     #solo, #shoot { height: 40vh; }
     #outdoor, #double { height: 30vh; }
     #reel { height: 50vh; }
+
+    nav {
+      padding: 15px 30px;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -358,7 +345,7 @@
     }
 
     .menu-open a {
-      font-size: 3rem;
+      font-size: 2.5rem;
       padding: 10px;
     }
 

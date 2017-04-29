@@ -16,9 +16,6 @@
 	<!-- STYLESHEET -->
 	<link href="css/css.css" rel="stylesheet" type="text/css">
 
-	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
 	<!-- GOOGLE FONT -->
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
 
@@ -36,7 +33,7 @@
 	<?php include 'includes/nav.php' ?>
 
 	<!-- Home -->
-	<div id="home" class="container-fullscreen">
+	<div id="home" class="container-fullscreen dark-sm dark-lg">
 		<div class="main-title">
 			<h1>Mia Mollie<br><span>Aerial</span></h1>
 		</div>
@@ -72,7 +69,6 @@
 		//Make each container-fullscreen fill the screen
 		var window_height = $(window).innerHeight() + 50;
 		var window_width = $(window).innerWidth();
-
 		$(".container-fullscreen").css("min-height", window_height);
 
 	});
@@ -136,15 +132,13 @@
 			preloader: false,
 			fixedContentPos: false
 		});
-
-
 	});
 
 </script>
 
 <!-- SVG Draw -->
-<script type="text/javascript" src="../js/svgdraw.js"></script>
+<script type="text/javascript" src="/js/svgdraw.js"></script>
 <!-- Paralax -->
-<script type="text/javascript" src="../js/paralax.js"></script>
+<script type="text/javascript" src="/js/paralax.js"></script>
 </body>
 </html>
