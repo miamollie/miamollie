@@ -20,7 +20,7 @@ $(document).ready(function(){
 	path.getBoundingClientRect();
 
 	// Define a transition
-	path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 3s ease-in-out';
+	path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 4s cubic-bezier(.17,.67,.83,.67)';
 
 
 	$(window).scroll(function () {
@@ -44,4 +44,3 @@ $(document).ready(function(){
 
 
 });
-
